@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  img = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/391px-Apple_logo_black.svg.png"
+  img = "https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/040ca38cefb1d9226d79c05dd25469cb/32/256x256.png"
 }

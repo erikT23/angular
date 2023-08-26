@@ -1,1 +1,6 @@
-<p>show-comment works!</p>
+<div *ngIf="comment !== undefined">
+  <li>Title: {{ comment.title }}</li>
+  <li>Description: {{ comment.description }}</li>
+  <li>Author: {{ comment.author }}</li>
+  <li>CreatedAt: {{ comment.createAt }}</li>
+</div>

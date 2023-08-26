@@ -3,7 +3,9 @@
     <h3>Comentarios</h3>
   </div>
   <div class="col-lg-6">
-    <button class="btn btn-primary float-end" routerLink="/addComment">Nuevo Comentario</button>
+    <button class="btn btn-primary float-end" routerLink="/addComment">
+      Nuevo Comentario
+    </button>
   </div>
 </div>
 
@@ -22,11 +24,21 @@
       <td>{{ comment.author }}</td>
       <td>{{ comment.description }}</td>
       <td>{{ comment.createAt }}</td>
-      <td  style="width: 10%;">
-        <button class="btn btn-primary float-end">Editar</button>
+      <td style="width: 10%">
+        <a
+          [routerLink]="['/showComment', comment.id]"
+          class="btn btn-primary float-end"
+          >Editar</a
+        >
       </td>
-      <td style="width: 10%;">
-        <button class="btn btn-danger float-end">Eliminar</button>
+      <td style="width: 10%">
+        <button
+          (click)="deleteComment(comment.id)"
+          class="btn btn-danger float-end"
+        >
+          Eliminar
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>
